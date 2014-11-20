@@ -1,0 +1,5 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by RTCIncoming.rc
+//
+#define HIDC_CHECKAUTO                  0x806603e8    // IDD_RTCINCOMING_DIALOG
+#define HIDC_VSEND                      0x806603f2    // IDD_RTCINCOMING_DIALOG

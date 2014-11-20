@@ -1,0 +1,285 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_LOGON DIALOG DISCARDABLE  0, 0, 253, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Logon"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_EDIT_LOGON_USERURI,58,7,120,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOGON_SERVER,58,24,120,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_LOGON_TRANSPORT,58,41,48,53,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,196,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,196,24,50,14
+    LTEXT           "User URI",IDC_STATIC,26,10,30,8
+    LTEXT           "Server Address",IDC_STATIC,7,27,49,8
+    LTEXT           "Transport",IDC_STATIC,25,43,31,8
+END
+
+IDD_DIALOG_WATCHER DIALOG DISCARDABLE  0, 0, 186, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Incoming Watcher"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Allow",IDC_BUTTON_WATCHER_ALLOW,129,7,50,14
+    PUSHBUTTON      "Block",IDC_BUTTON_WATCHER_BLOCK,129,24,50,14
+    CONTROL         "Add the user as a buddy",IDC_CHECK_WATCHER_ADD_BUDDY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,51,93,10
+    LTEXT           "WATCHER_NAME",IDC_STATIC_WATCHER_NAME,7,7,113,8
+    LTEXT           "WATCHER_URI",IDC_STATIC_WATCHER_URI,7,17,113,8
+    LTEXT           "has requested to watch your presence status.",
+                    IDC_STATIC,7,27,113,18
+END
+
+IDD_DIALOG_ADDRESS_NAME DIALOG DISCARDABLE  0, 0, 220, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_EDIT_ADDRESS_NAME,32,7,120,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADDRESS_URI,32,24,120,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,163,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,24,50,14
+    LTEXT           "Name",IDC_STATIC,7,10,20,8
+    LTEXT           "URI",IDC_STATIC,13,27,14,8
+END
+
+IDD_DIALOG_ADDRESS DIALOG DISCARDABLE  0, 0, 220, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_EDIT_ADDRESS_URI,33,7,120,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,163,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,24,50,14
+    LTEXT           "URI",-1,13,10,14,8
+END
+
+IDD_DIALOG_SESSION DIALOG DISCARDABLE  0, 0, 186, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Incoming Session"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "&Accept",IDC_BUTTON_SESSION_ACCEPT,129,7,50,14
+    PUSHBUTTON      "&Reject",IDC_BUTTON_SESSION_REJECT,129,24,50,14
+    LTEXT           "SESSION_NAME",IDC_STATIC_SESSION_NAME,7,7,113,8
+    LTEXT           "SESSION_URI",IDC_STATIC_SESSION_URI,7,17,113,8
+    LTEXT           "has requested an audio/video call.",IDC_STATIC,7,27,113,
+                    18
+END
+
+IDD_DIALOG_AUTH DIALOG DISCARDABLE  0, 0, 253, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Authentication"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_EDIT_AUTH_USERURI,58,7,120,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AUTH_ACCOUNT,58,23,120,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AUTH_PASSWORD,58,39,120,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,196,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,196,24,50,14
+    LTEXT           "User URI",IDC_STATIC,26,10,30,8
+    LTEXT           "Account",IDC_STATIC,28,27,28,8
+    LTEXT           "Password",IDC_STATIC,24,43,32,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_LOGON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_DIALOG_WATCHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_DIALOG_ADDRESS_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_DIALOG_ADDRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_DIALOG_SESSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_DIALOG_AUTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_APP MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Log O&n...",                  ID_FILE_LOGON
+        MENUITEM "Log O&ff",                    ID_FILE_LOGOFF, GRAYED
+        MENUITEM SEPARATOR
+        POPUP "&Presence Status"
+        BEGIN
+            MENUITEM "O&ffline",                    ID_FILE_PRESENCESTATUS_OFFLINE
+
+            MENUITEM "&Online",                     ID_FILE_PRESENCESTATUS_ONLINE
+
+            MENUITEM "&Away",                       ID_FILE_PRESENCESTATUS_AWAY
+
+            MENUITEM "&Idle",                       ID_FILE_PRESENCESTATUS_IDLE
+
+            MENUITEM "&Busy",                       ID_FILE_PRESENCESTATUS_BUSY
+
+            MENUITEM "Be &Right Back",              ID_FILE_PRESENCESTATUS_BERIGHTBACK
+
+            MENUITEM "On the &Phone",               ID_FILE_PRESENCESTATUS_ONTHEPHONE
+
+            MENUITEM "Out to &Lunch",               ID_FILE_PRESENCESTATUS_OUTTOLUNCH
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Action"
+    BEGIN
+        MENUITEM "&Call...",                    ID_ACTION_CALL
+        MENUITEM "&Message...",                 ID_ACTION_MESSAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Add Buddy...",               ID_ACTION_ADDBUDDY, GRAYED
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Tuning &Wizard...",           ID_TOOLS_TUNINGWIZARD
+    END
+END
+
+IDR_MENU_IM MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+END
+
+IDR_MENU_AV MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+END
+
+IDR_MENU_BUDDY MENU DISCARDABLE 
+BEGIN
+    POPUP " "
+    BEGIN
+        MENUITEM "&Call Buddy",                 ID_BUDDY_CALL
+        MENUITEM "&Message Buddy",              ID_BUDDY_MESSAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Remove Buddy",               ID_BUDDY_REMOVE
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
